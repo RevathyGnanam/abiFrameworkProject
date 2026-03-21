@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+<groups>
+<run>
+<include name="Sanity"/>
+<!-- <include name="Regression"/>
+<include name="Smoke"/> -->
+</run>
+</groups>
+
+<listeners>
+<listener class-name="utilities.ExtentReportmanager"/>
+
+</listeners>
+  <test thread-count="5" name="Test">
+  <parameter name ="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC_01_CreateAccountRegistration"/>
+       <class name="testCases.TC_02_LoginScenario"/>
+      <class name="testCases.TC_02_LoginScenarioUsingDataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

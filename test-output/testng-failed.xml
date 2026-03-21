@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utilities.ExtentReportmanager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.TC_02_LoginScenarioUsingDataProvider">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginScenario" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testCases.TC_02_LoginScenarioUsingDataProvider -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
