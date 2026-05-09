@@ -20,7 +20,7 @@ public class TC_02_LoginScenario extends BaseClass {
 		loginpage.enterEmailId(prp.getProperty("username"));
 		loginpage.enterpassword(prp.getProperty("password"));
 		loginpage.clickLoginButton();
-		
+		System.out.println("Testing the conflicts");
 		DemoHomePage hp = new DemoHomePage(driver);
 		Assert.assertTrue(hp.verifyLogoutButton());
 		
