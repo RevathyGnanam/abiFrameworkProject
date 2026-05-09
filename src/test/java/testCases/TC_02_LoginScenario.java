@@ -21,6 +21,7 @@ public class TC_02_LoginScenario extends BaseClass {
 		loginpage.enterpassword(prp.getProperty("password"));
 		loginpage.clickLoginButton();
 		DemoHomePage hp = new DemoHomePage(driver);
+		System.out.println("Client changes");
 		Assert.assertTrue(hp.verifyLogoutButton());
 		
 		hp.clickLogout();
