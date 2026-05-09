@@ -20,6 +20,7 @@ public class TC_02_LoginScenario extends BaseClass {
 		loginpage.enterEmailId(prp.getProperty("username"));
 		loginpage.enterpassword(prp.getProperty("password"));
 		loginpage.clickLoginButton();
+		System.out.println("Abi branches");
 		System.out.println("Revathy Changes");
 		DemoHomePage hp = new DemoHomePage(driver);
 		System.out.println("Client changes");
