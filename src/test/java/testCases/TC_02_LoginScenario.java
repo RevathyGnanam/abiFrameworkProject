@@ -23,7 +23,8 @@ public class TC_02_LoginScenario extends BaseClass {
 		System.out.println("Testing the conflicts");
 		DemoHomePage hp = new DemoHomePage(driver);
 		Assert.assertTrue(hp.verifyLogoutButton());
-		System.out.println("Testing")
+		System.out.println("Testing");
+			System.out.println("Testing the scenarios");
 		hp.clickLogout();
 		
 		
