@@ -24,7 +24,7 @@ public class TC_02_LoginScenarioUsingDataProvider extends BaseClass {
 		
 		DemoHomePage hp = new DemoHomePage(driver);
 		Assert.assertTrue(hp.verifyLogoutButton());
-		
+		System.out.println("Testing the url")
 		hp.clickLogout();
 		
 		
